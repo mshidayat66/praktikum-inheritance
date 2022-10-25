@@ -2,14 +2,12 @@
 public class CheckingAccount extends Account{
     private double overdraftProtection;
     
-    public CheckingAccount(double initBalance, double balance, double protect){
-        super(initBalance);
+    public CheckingAccount(double balance, double protect){
         super.balance = balance;
         overdraftProtection = protect;
     }
     
-    public CheckingAccount(double initBalance, double balance){
-        super(initBalance);
+    public CheckingAccount(double balance){
         this.balance = balance;
         overdraftProtection = -0.1d;
     }
